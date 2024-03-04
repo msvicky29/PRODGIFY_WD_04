@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    
+}
+body{
+    background-color: #fef7e5;
+}
+
+/* ====================================================== */
+.home {
+    width: 100%;
+    padding: 2rem;
+    min-height: 40vh;
+}
+
+.name i {
+    font-size: 40px;
+    margin-right: 0.6rem;
+}
+
+.name a {
+    text-decoration: none;
+    color: #000;
+}
+
+.name h1 {
+    font-size: 60px;
+}
+
+.download a {
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #27ae60;
+}
+.view-btn {
+    background-color: #ffaa00;
+    width: 150px;
+    height: 50px;
+    color: #000000;
+    border-radius: 8px;
+    border-width: 0;
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #ffaa00;
+    border: 2px solid #ffaa00;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin-left: 0.6rem;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #ffaa00;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+    scale: 5;
+}
+
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px #ffaa00;
+}
+
+.button:active {
+    scale: 1;
+}
+nav{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    background-color: #ffc756 !important;    
+}
+
+
+.intro {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fef7e5;
+}
+
+.myimg {
+    border-radius: 15px;
+    border: 4px solid #ffaa00;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#down{
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+.box {
+    width: auto;
+    height: 6rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.box:hover {
+   border: 2px solid #001377;
+    background-color: #ffaa00;
+    color: #001377;
+}
+
+.box:hover i {
+    color:rgb(255, 178, 12);
+    color: #001377;
+}
+
+.box:hover p {
+    color:rgb(255, 178, 12);
+    color: #001377;
+}
+
+.box i {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+
+/* ============================================= */
+.show-btn {
+    font-size: 20px;
+    width: 120px;
+    padding: 8px !important;
+    text-transform: uppercase;
+  }
+  
+  
+  
+
+.my-title {
+    margin: 2.3rem 0;
+    font-size: 40px;
+}
+.test{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #27ae60;
+    border-radius: 10px
+}
+footer {
+    margin-top: 1.5rem 0;
+}
+
+footer label {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+   
+}
+
+footer i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #000;
+}
+footer{
+    background-color: #fffbf2;
+    width: 100%;
+    min-height:40vh ;
+}
+textarea {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+.send-btn {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #ffaa00;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    display: block;
+    margin: auto;
+
+}
+
+.send-btn:hover {
+    background: #ffaa00;
+    color: white;
+    font-size: 1.5em;
+}
+
+.conatct-div{
+    padding: 1.4rem;
+}
+.copy{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy p{
+    margin: auto;
+    font-size: 1.2rem;
+}
+@media(max-width:768px){
+    .name h1{
+        font-size: 50px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.form-group.error p {
+    color: #f53b57;
+    visibility: visible;
+  }
+  
+  .form-group.error input {
+    border-color: #f53b57;
+  }
+  .form-group.error textarea {
+    border-color: #f53b57;
+  }
+  
+  .form-group.success input {
+    border-color: #05c46b;
+  }
+  .form-group.success textarea {
+    border-color: #05c46b;
+  }
+  .form-group.normal textarea {
+    border-color: #000;
+  }
+  .form-group.normal input {
+    border-color: #000;
+  }
+
+
+
+
+
+@media (max-width:556px){
+    .box{
+        width: 100% !important;
+    }
+    .name h1{
+        font-size: 40px;
+    }
+}
+@media (max-width:410px){
+    .name h1{
+        font-size: 35px;
+    }
+}
+
+/* 
+
+emailjs.sendForm("service_d14jrha", "template_e9f5p2m", this)
+.then(function (response) {
+    alert("Email sent successfully!");
+
+}, function (error) {
+    console.error("Email could not be sent:", error);
+}); */
